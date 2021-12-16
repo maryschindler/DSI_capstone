@@ -43,12 +43,14 @@ Taking the 'showid' from both Phish shows collected all setlists collected I bui
 ### Data Cleaning and EDA
 I worked with two datasets for EDA but only one for modeling. For the dataset used for modeling, I created a function to build a ‘setlists’ column on which my setlist predictions would be modeled. The function ‘make_setlist_col(df)’ built a list of songs associated with each unique showid, assigned the list to the appropriate column entry.
 </br>
+
 Once this process was complete I cleaned what few null values there were: only in the 'state' and 'setlistnotes' columns. Neither of which were to be used in modeling but the null values in both columns were replaced with 'Not Available'.
 
 
 ### Modeling Preparation 
 Once my data was cleaned I needed to prepare it for modeling in a way that the model would be able to observe the previous $n$ songs played the predict the next $n + 1$ song to be played. I built my corpus for predictions by concating all setlists together and identifying all unique songs. The corpus of all songs were then encoded, based on their sorted index location as a unique song. 
 </br>
+
 From this corpus I built sample setlist of length 20 (the average length of show), iterating through the entire corpus, for a total of 36,023 lists of 20 songs on which my model could train and test. 
 
 
@@ -62,6 +64,7 @@ As previously stated, the purpose of modeling was to look at $n$ songs played (i
 ### Recommendations & Conclusions
 I was ultimately rewarded with 10% testing accuracy. Assuming a setlist length of 20 songs, 10% prediction accuracy is 2 songs correctly predicted. I was able to build a model that performed twice as well as my MVP. 
 </br>
+
 While I only used the instances of previous songs played to predict the next song played, with no regard for show date, location, tour, etc., only being able to make predictions with 10% accuracy indicates that Phish has been and remains diverse in the use of their song catalog. With the inclusion of their most recent 'concept show' songs in their lineup, they continue to remain original and unpredictable. 
 
 
