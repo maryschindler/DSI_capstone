@@ -40,7 +40,6 @@ Using Phish.net's API, for which an API key needed to be requested, I obtained t
 Taking the 'showid' from both Phish shows collected all setlists collected I built a new dataset of all setlists sharing a showid in common. 
 
 
-
 ### Data Cleaning and EDA
 I worked with two datasets for EDA but only one for modeling. For the dataset used for modeling, I created a function to build a ‘setlists’ column on which my setlist predictions would be modeled. The function ‘make_setlist_col(df)’ built a list of songs associated with each unique showid, assigned the list to the appropriate column entry.
 </br>
@@ -48,13 +47,13 @@ Once this process was complete I cleaned what few null values there were: only i
 
 
 ### Modeling Preparation 
-Once my data was cleaned I needed to prepare it for modeling in a way that the model would be able to observe the previous $n$ songs played the predict the next $n + 1$ song to be played. I built my corpus for predictions by concating all setlists together and identifying all unique songs. The corpus of all songs were then encoded, based on their sorted index location as a unique song.  
+Once my data was cleaned I needed to prepare it for modeling in a way that the model would be able to observe the previous $n$ songs played the predict the next $n + 1$ song to be played. I built my corpus for predictions by concating all setlists together and identifying all unique songs. The corpus of all songs were then encoded, based on their sorted index location as a unique song. 
 </br>
 From this corpus I built sample setlist of length 20 (the average length of show), iterating through the entire corpus, for a total of 36,023 lists of 20 songs on which my model could train and test. 
 
+
 ### Modeling
 As previously stated, the purpose of modeling was to look at $n$ songs played (in order played) and to predict the $n + 1$ song to be played next. Based on my research I choose to train a Recurrent Neural Network (RNN) with an LSTM layer. The LSTM layer was necessary in this instance as it is capable of learning order dependence for sequence predictions. I tried a few different RNN models to see which produced the best results: 
-
 - with LSTM
 - with Dropout
 - Gridsearching for best parameters
@@ -62,15 +61,8 @@ As previously stated, the purpose of modeling was to look at $n$ songs played (i
 
 ### Recommendations & Conclusions
 I was ultimately rewarded with 10% testing accuracy. Assuming a setlist length of 20 songs, 10% prediction accuracy is 2 songs correctly predicted. I was able to build a model that performed twice as well as my MVP. 
-
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-
-While we found that the end of DST in the Fall has no statistically relevant effect on average severity of traffic impact, the start of DST in the Spring has a large effect on the average severity of traffic impact in all cities we observed
-
-Because the impact is so significant at the start of DST Sigmoids Data Science can confidently recommend that Rideshare Company ® begin lobbying to abolish DST altogether. 
+</br>
+While I only used the instances of previous songs played to predict the next song played, with no regard for show date, location, tour, etc., only being able to make predictions with 10% accuracy indicates that Phish has been and remains diverse in the use of their song catalog. With the inclusion of their most recent 'concept show' songs in their lineup, they continue to remain original and unpredictable. 
 
 
 ### Limitations & Future Considerations
@@ -78,7 +70,6 @@ Because the impact is so significant at the start of DST Sigmoids Data Science c
     - I was unable to figure out how to incorporate the tags: ‘set1’, ‘set2’, ‘encore’, into my corpus. I would have like to use these as it’s likely certain songs are use as show openers and show closers more often than others. 
     - I may enjoy Phish but I am not an expert. I would have like to do more outside research or reach out to the community of Phish fans for their input. 
     - Along these lines, I did not know when to omit data: for example, the most recent run of Halloween shows were themed around the band being ‘aliens’ or ‘visitors’ from another time. They played a special show, with many of the songs played for the first time. See: https://liveforlivemusic.com/features/phish-sci-fi-soldier-get-more-down-halloween-las-vegas-10-31-21-photos-videos/ for more information.
-    
 2. Future Considerations
     - Incorporating the tags: ‘set1’, ‘set2’, ‘encore’ into my corpus and encoded lists. 
     - Building a function to build a predicted setlist based on a provided corpus (particular string of songs) and length of a set.
