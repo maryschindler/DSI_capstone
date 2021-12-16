@@ -23,14 +23,7 @@ The band Phish is known for its originality. From their sound, to their instrume
 
 
 ### Background
-Founded at the Univeristy of Vermont (Go Catamounts!) in the 1980s, Phish has been performing in the Jam Band scene for over thirty years. During that period the band has gone through different iterations and hiatuses. Throughour their career, however, they have managed to stay original.
-
-Like any band that has been around for years, they want to continue performing while exploring their sound.
-
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
-NEED TO WRITE NEED TO WRITE NEED TO WRITE NEED TO WRITE
+Founded at the Univeristy of Vermont (Go Catamounts!) in the 1980s, Phish has been performing in the Jam Band scene for over thirty years. During that period the band has gone through different iterations and hiatuses. Throughour their career, however, they have managed to stay original yet true to their roots. During that time the band has played over 900 unique songs, with 325 original numbers among them. With such a voluminous catalog to choose from, is there any predictability to their shows?
 
 
 ### Data Collection
