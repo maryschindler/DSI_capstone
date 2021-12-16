@@ -110,4 +110,4 @@ While I only used the instances of previous songs played to predict the next son
 - https://stackoverflow.com/questions/16992713/translate-every-element-in-numpy-array-according-to-key
 
 ### Note:
-Regrettably, I found that my idea was not original but wanted to proceed with the project anyway. I sincerely 'thank you' to Andrew Reed and his work outlined on https://towardsdatascience.com/predicting-what-song-phish-will-play-next-with-deep-learning-947ccce3824d, which served as a inspiration due to his much better performing RNN. 
+Regrettably, I found that my idea was not original but wanted to proceed with the project anyway. A sincerely 'thank you' to Andrew Reed and his work outlined on https://towardsdatascience.com/predicting-what-song-phish-will-play-next-with-deep-learning-947ccce3824d, which served as a inspiration due to his much better performing RNN. 
