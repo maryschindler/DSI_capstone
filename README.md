@@ -81,30 +81,30 @@ While I only used the instances of previous songs played to predict the next son
 
 ### Sources
 **External Sources:**
-https://towardsdatascience.com/predicting-what-song-phish-will-play-next-with-deep-learning-947ccce3824d
-https://github.com/andrewrreed/phish-setlist-modeling
-https://www.tylerclavelle.com/blog/2017/phish/
-https://www.tensorflow.org/text/tutorials/text_generation
-https://medium.com/analytics-vidhya/understanding-embedding-layer-in-keras-bbe3ff1327ce
-https://www.analyticsvidhya.com/blog/2021/08/predict-the-next-word-of-your-text-using-long-short-term-memory-lstm/
-https://old.reddit.com/r/treyface/top/
+- https://towardsdatascience.com/predicting-what-song-phish-will-play-next-with-deep-learning-947ccce3824d
+- https://github.com/andrewrreed/phish-setlist-modeling
+- https://www.tylerclavelle.com/blog/2017/phish/
+- https://www.tensorflow.org/text/tutorials/text_generation
+- https://medium.com/analytics-vidhya/understanding-embedding-layer-in-keras-bbe3ff1327ce
+- https://www.analyticsvidhya.com/blog/2021/08/predict-the-next-word-of-your-text-using-long-short-term-memory-lstm/
+- https://old.reddit.com/r/treyface/top/
 
 
 **Coding:**
-https://stackoverflow.com/questions/12293208/how-to-create-a-list-of-lists
-https://stackoverflow.com/questions/21034830/how-can-i-generate-more-colors-on-pie-chart-matplotlib
-https://stackoverflow.com/questions/11264521/date-ticks-and-rotation-in-matplotlib
-https://stackoverflow.com/questions/39331143/huge-space-between-title-and-plot-matplotlib
-https://stackoverflow.com/questions/11264521/date-ticks-and-rotation-in-matplotlib
-https://www.tutorialspoint.com/plot-a-bar-using-matplotlib-using-a-dictionary
-https://stackoverflow.com/questions/53801614/map-elements-of-a-list-to-their-index-in-another-list
-https://numpy.org/doc/stable/reference/generated/numpy.save.html
-https://numpy.org/doc/stable/reference/generated/numpy.load.html#numpy.load
-https://www.tensorflow.org/text/tutorials/text_generation
-https://www.geeksforgeeks.org/python-keras-keras-utils-to_categorical/
-https://www.tensorflow.org/text/tutorials/text_generation
-https://stackoverflow.com/questions/55774632/gridsearchcv-randomizedsearchcv-with-lstm
-https://machinelearningmastery.com/visualize-deep-learning-neural-network-model-keras/
-https://stackoverflow.com/questions/51382524/what-is-the-difference-between-predict-and-predict-class-functions-in-keras
-https://stackoverflow.com/questions/44806125/attributeerror-model-object-has-no-attribute-predict-classes
-https://stackoverflow.com/questions/16992713/translate-every-element-in-numpy-array-according-to-key
+- https://stackoverflow.com/questions/12293208/how-to-create-a-list-of-lists
+- https://stackoverflow.com/questions/21034830/how-can-i-generate-more-colors-on-pie-chart-matplotlib
+- https://stackoverflow.com/questions/11264521/date-ticks-and-rotation-in-matplotlib
+- https://stackoverflow.com/questions/39331143/huge-space-between-title-and-plot-matplotlib
+- https://stackoverflow.com/questions/11264521/date-ticks-and-rotation-in-matplotlib
+- https://www.tutorialspoint.com/plot-a-bar-using-matplotlib-using-a-dictionary
+- https://stackoverflow.com/questions/53801614/map-elements-of-a-list-to-their-index-in-another-list
+- https://numpy.org/doc/stable/reference/generated/numpy.save.html
+- https://numpy.org/doc/stable/reference/generated/numpy.load.html#numpy.load
+- https://www.tensorflow.org/text/tutorials/text_generation
+- https://www.geeksforgeeks.org/python-keras-keras-utils-to_categorical/
+- https://www.tensorflow.org/text/tutorials/text_generation
+- https://stackoverflow.com/questions/55774632/gridsearchcv-randomizedsearchcv-with-lstm
+- https://machinelearningmastery.com/visualize-deep-learning-neural-network-model-keras/
+- https://stackoverflow.com/questions/51382524/what-is-the-difference-between-predict-and-predict-class-functions-in-keras
+- https://stackoverflow.com/questions/44806125/attributeerror-model-object-has-no-attribute-predict-classes
+- https://stackoverflow.com/questions/16992713/translate-every-element-in-numpy-array-according-to-key
